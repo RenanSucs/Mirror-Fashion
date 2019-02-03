@@ -77,6 +77,28 @@ header{
     width:170px;
 }
 
+.play,
+.pause{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    z-index: 1;
+}
+
+.pause{
+    border-left: 10px solid #900;
+    border-right: 10px solid #900;
+    height: 30px;
+    width: 5px;
+}
+
+.play{
+    border-left: 25px solid #900;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent; 
+}
+
 .busca button{
     background-image: url(../img/busca.png);
     background-repeat: no-repeat;
@@ -123,6 +145,7 @@ header{
 
 .destaque{
     margin-top:10px;
+    position: relative;
 }
 
 .painel{
@@ -187,6 +210,34 @@ header{
 
 .painel-aberto li:nth-child(n+7){
     display: inline-block;
+}
+
+.painel button{
+    padding: 10px;
+
+    background-color: #333;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5)
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: 1px 0 1px black;
+
+    transition: 0.3s;
+}
+
+.painel button:hover{
+    background-color: #393939;
+    box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9)
+}
+
+.container-flex{
+    display: flex;
+}
+
+.flex-end{
+    justify-content: flex-end;
 }
 
 .novidades{

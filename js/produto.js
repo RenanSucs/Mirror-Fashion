@@ -8,3 +8,4 @@ function mostraTamanho(){
 inputTamanho.oninput = mostraTamanho
 
 mostraTamanho()
+
